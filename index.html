@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark" style="z-index: 100; position: sticky;">
+        <a class="navbar-brand" href="/" style="text-decoration: none;">Landing page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="border: 1px solid white;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/#"><i class="fa fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <style>
+        .form-control:focus{
+            box-shadow: 0 0 0 0;
+        }
+        .navbar{
+            background: black;
+            box-shadow: 0 0 5px 1px;
+        }
+        .navbar-dark .navbar-toggler-icon{
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        @media(min-width: 991px){
+            .navbar{
+                padding: 0 16px;    
+            }
+            .navbar .nav-link{
+                padding: 16px 0;
+            }
+            .login{
+                padding: 10px!important;
+            }
+        }
+        .navbar a, .navbar .nav-link{
+            color: white!important;
+        }
+        .navbar a:hover{
+            text-decoration: underline;
+        }
+    </style> -->
+
+    <div class="sideNav" style="position: fixed; z-index: 100; right: 30px; top: 40%;">
+        <div><p class="dot-1">⚫</p></div>
+        <div><p class="dot-2">⚪</p></div>
+        <div><p class="dot-3">⚪</p></div>
+        <div><p class="dot-4">⚪</p></div>
+    </div>
+
+    <div class="section1" style="text-align: center;">
+        <!-- <h1 style="font-weight: 700; margin-left: 60px;"><br><span style="color: #fff; animation: glow 1s ease-in-out infinite alternate; font-size: 70px;">HELLO</span></h1> -->
+        <!-- <h1 style="font-size: 80px; font-weight: 700;">Hire a <span style="color: whitesmoke; font-size: 70px; animation: glow 1s ease-in-out infinite alternate;">Developer</span></h1> -->
+        <!-- <button class="btn contact-btn">Contact</button> -->
+        <div class="fluid-circle"></div>
+        <div class="rellax" style="position: absolute; margin: auto; top: 0; bottom: 0; right: 0; left: 0; width: 700px; height: fit-content;">
+            <h1 style=" font-size: 70px; font-weight: 700; text-align: center; color: powderblue;">HELLO.</h1>
+            <h3>I'm Jeevan, professional web developer and android app developer.</h3>
+            <button class="btn btn-outline-light" style="margin-top: 20px; padding: 10px 40px;" onclick="$('html, body').animate({
+                scrollTop: $('.section4').offset().top
+            }, 1000);">Contact</button>
+        </div>
+        <!-- <div class="card">
+            <div class="card-body">
+                <p style="color: rgb(1, 129, 1);">#Self introduction</p>
+                <p style="color: darkmagenta;"><b>Name {</b></p>
+                <p style="margin-left: 20px; color: whitesmoke;">First name: <span style="color: rgb(108, 108, 255);">Jeevan;</span></p>
+                <p style="margin-left: 20px; color: whitesmoke;">Last name: <span style="color: rgb(108, 108, 255);">Abishek;</span></p>
+                <p style="color: darkmagenta;"><b>}</b></p>
+            </div>
+        </div>
+        <div class="card" style="margin-left: 140px;">
+            <div class="card-body">
+                <p style="color: darkmagenta;"><b>What i do {</b></p>
+                <p style="margin-left: 20px; color: whitesmoke;">Profession: <span style="color: rgb(108, 108, 255);">Developer;</span></p>
+                <p style="margin-left: 20px; color: whitesmoke;">Website developer: <span style="color: rgb(108, 108, 255);">true;</span></p>
+                <p style="margin-left: 20px; color: whitesmoke;">Android app developer: <span style="color: rgb(108, 108, 255);">true;</span></p>
+                <p style="color: darkmagenta;"><b>}</b></p>
+            </div>
+        </div> -->
+
+        
+        
+    </div>
+    <div class="section2">
+        <div class="container">
+            <h1 style="font-weight: 700; padding-top: 40px; margin: 0 auto; border-bottom: 1px solid powderblue; width: fit-content;">Skills</h1>
+            <div class="row hidemeY" style="margin-top: 50px; background-color: rgb(0, 0, 82, 0.6); padding: 50px; border-radius: 20px;">
+                <div class="col-lg-7" style="margin: 40px 0;">
+                    <h5 style="color: powderblue;">Web development</h5>
+                    <span class="badge bg-success" style="margin-top: 10px;">Node.js</span>
+                    <span class="badge bg-warning" style="margin-top: 10px;">Javascript</span>
+                    <span class="badge" style="margin-top: 10px; background-color: slateblue;">PHP</span>
+                    <span class="badge" style="margin-top: 10px; background-color: blue;">Jquery</span>
+                    <span class="badge" style="margin-top: 10px; background-color: red;">HTML</span>
+                    <span class="badge" style="margin-top: 10px; background-color: chartreuse;">CSS</span>
+                    <span class="badge" style="margin-top: 10px; background-color: darkkhaki;">EJS</span>
+                    <span class="badge" style="margin-top: 10px;">Bootstrap</span>
+                    <h5 style="margin-top: 20px; color: powderblue;">Android app development</h5>
+                    <span class="badge" style="margin-top: 10px; background-color: orange;">Java</span>
+                    <span class="badge" style="margin-top: 10px; background-color: rgb(150, 49, 49);">Kotlin</span>
+                    <h5 style="margin-top: 20px; color: powderblue;">Databases</h5>
+                    <span class="badge" style="margin-top: 10px; background-color: green;">MongoDB</span>
+                    <span class="badge" style="margin-top: 10px; background-color: orange;">MySQL</span>
+                    <span class="badge" style="margin-top: 10px; background-color: rgb(214, 214, 0);">Firebase</span>
+                    <span class="badge" style="margin-top: 10px; background-color: lightblue;">SQLite</span>
+
+                </div>
+                <div class="col-lg-5" style="background-image: url(images/coding.jpg); padding: 40px 0; background-position: center; background-size: cover; border-radius: 15px; box-shadow: 0 0 10px 1px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="container">
+            <h1 style="font-weight: 700; margin: 0 auto 30px auto; border-bottom: 2px solid powderblue; padding-bottom: 3px; width: fit-content;">Latest works</h1>
+            <div class="row">
+                <div class="col-lg-4 hidemeX">
+                    
+                    <img src="images/android.png">
+                    <div class="overlay">
+                        <h5>Android app</h5>
+                        <a href="https://play.google.com/store/apps/details?id=com.app.confidant" target="_blank"><button class="btn btn-outline-light">See More</button></a>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 hidemeX">
+                    <img src="images/ecommerce-website.jpg" alt="">
+                    <div class="overlay">
+                        <h5>E-commerce site</h5>
+                        <a href="https://www.elaneerhouse.com" target="_blank"><button class="btn btn-outline-light">See More</button></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 hidemeX">
+                    <img src="images/donut.jpg" alt="">
+                    <div class="overlay">
+                        <h5>Front-end development</h5>
+                        <a href="https://j33vann.github.io/Design-Jam-Submission/index.html" target="_blank"><button class="btn btn-outline-light">See More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row second-row" style="margin-top: 30px;">
+                <div class="col-lg-4 hidemeX">
+                    <img src="images/website.jpg" alt="">
+                    <div class="overlay">
+                        <h5>Website builder</h5>
+                        <a href="https://landingpage980.herokuapp.com/" target="_blank"><button class="btn btn-outline-light">See More</button></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 hidemeX">
+                    <img src="images/pdf-image.jpg" alt="">
+                    <div class="overlay">
+                        <h5>Pdf reader app</h5>
+                        <a href="https://play.google.com/store/apps/details?id=com.PdfToolkit.pdfToolkit" target="_blank"><button class="btn btn-outline-light">See More</button></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 hidemeX">
+                    <img src="images/empty.jpg" alt="">
+                    <div class="overlay">
+                        <h5 style="margin-bottom: 0;">Could be your project here</h5>
+                        <p style="margin-bottom: 10px; margin-top: 5px; font-weight: 100;">Contact Me</p>
+                        <button class="btn btn-outline-light" onclick="$('html, body').animate({
+                            scrollTop: $('.section4').offset().top
+                        }, 1000);">See More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="container">
+            <h1 style="font-weight: 700; padding-top: 20px; margin: 0 auto 30px auto; border-bottom: 2px solid powderblue; padding-bottom: 3px; width: fit-content;">Let's talk</h1>
+            <div class="row">
+                <div class="col-lg-5" style="background-color: powderblue;">
+                    <img src="images/contact.png" alt="" style="width: inherit; margin-top: 30px;">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6" style="margin-top: 20px;">
+                    <h5>Name</h5>
+                    <input type="text" class="form-control">
+                    <h5>Enter message</h5>
+                    <textarea type="text" id="msg-textarea" class="form-control"></textarea>
+                    <a class="send-msg-link" href="mailto:jeevanabishek02@gmail.com"><button class="btn send-msg-btn">Send message</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+
+<script>
+    var rellax = new Rellax(".rellax");
+</script>
+
+
+<style>
+
+    .hidemeX{
+        opacity: 0;
+        transform: translateX(-300px);
+        transition: all 2s ease-out;
+    }
+    .hidemeX.show{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .hidemeY{
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 2s ease-out;
+    }
+    .hidemeY.show{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    body{
+        color: white;
+        background-color: black;
+    }
+    ::-webkit-scrollbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        /* background: white; */
+    }
+    ::-webkit-scrollbar-thumb {
+        /* background-color: powderblue; */
+        border-radius: 10px;
+        background: linear-gradient(to bottom, #008aff, #00ffe7);
+    }
+
+    .sideNav p{
+        margin-bottom: 4px;
+        cursor: pointer;
+    }
+    .contact-btn{
+        background-image: linear-gradient(to bottom right, #FF1493, #FFC0CB); 
+        padding: 10px 30px;
+    }
+    .section1 .card{
+        width: fit-content;
+        min-width: 300px;
+        background-image: linear-gradient(to top right, #000e2b, #002677); 
+        margin: 40px;
+        box-shadow: 0 0 15px 1px;
+        margin-left: 60px;
+        /* background-color: #16082f; */
+    }
+    .card p{
+        margin-bottom: 3px;
+    }
+    .section1{
+        /* background-position: center;
+        background-size: cover;
+        background-image: url("images/sand.jpg"); */
+        position: relative;
+        width: 100%;
+        background-image: url("images/depth-3.png"), url("images/depth-2.png"), url("images/depth-1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position: 50% 50%;
+        background-color: #1d1e22;
+    }
+    .section2 .col-lg-7 span{
+        background-color: sandybrown;
+        padding: 10px 20px;
+    }
+    .fluid-circle{
+        opacity: 0.3;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #003cbe;
+        height: 500px;
+        width: 500px;
+        border-radius: 500px;
+        animation: wave 7s ease-in-out infinite alternate;
+        z-index: 0;
+    }
+    .section4 h5{
+        font-weight: 300;
+        margin-top: 20px;
+    }
+    .section4 input, textarea{
+        max-width: 400px;
+    }
+    .send-msg-btn{
+        background-color: rgb(0, 182, 206); 
+        color: white; 
+        margin-top: 20px;
+    }
+    .send-msg-btn:hover{
+        background-color: powderblue; 
+        color: white; 
+    }
+    .section1, .section2, .section3{
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 1rem;
+        width: 100%;
+        background-attachment: fixed;
+        transform: translateZ(-30vh) scale(1);
+    }
+    .section2{
+        z-index: -2;
+        background-image: url("images/dot.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .section3{
+        z-index: -3;
+        background-image: url("images/stripes.jpg");
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 30px;
+    }
+    .section3 img{
+        width: inherit;
+        height: 250px;
+        border-radius: 15px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 2s;
+    }
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        background-color: rgb(92, 155, 163);
+        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.9);
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+        text-align: center;
+    }
+    .overlay h5{
+        margin-top: 90px; 
+    }
+    .overlay a{
+        display: block; 
+    }
+    .section3 .col-lg-4:hover .overlay {
+        width: 100%;
+        left: 0;
+    }
+
+    .section4 {
+        z-index: -4;
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 1rem;
+        width: 100%;
+        background-color: white; 
+        color: black;
+        padding-bottom: 30px;
+    }
+
+    @media(max-width: 765px){
+        .sideNav{
+            display: none!important;
+        }
+        .fluid-circle{
+            width: 300px;
+            height: 300px;
+        }
+        .section1 h3{
+            font-size: 18px;
+            padding: 0 20px;
+        }
+        .section1 h1{
+            font-size: 50px!important;
+        }
+        .section2 .col-lg-5{
+            display: none;
+        }
+        .section2 .row{
+            padding: 20px!important;
+            margin-top: 20px!important;
+        }
+        .section2 .row h5{
+            font-size: 18px!important;
+        }
+        .rellax{
+            width: fit-content!important;
+        }
+        .section3 .col-lg-4{
+            margin-bottom: 30px;
+        }
+        .second-row{
+            margin-top: 0px!important;
+        }
+    }
+
+    @-webkit-keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+    }
+
+    @keyframes wave {
+        20% {
+            border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+        }
+        40% {
+            border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+        }
+        60% {
+            border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+        }
+        80% {
+            border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+        }20% {
+            border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+        }
+        40% {
+            border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+        }
+        60% {
+            border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+        }
+        80% {
+            border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+        }
+    }
+</style>
+
+<script>
+    $("#msg-textarea").keyup(function(){
+        $(".send-msg-link").attr("href", "mailto:jeevanabishek02@gmail.com" + "?body=" + $("#msg-textarea").val())
+    })
+    $('.flip').hover(function(){
+        $(this).find('.card').toggleClass('flipped');
+    });
+
+    var winHeight = $(window).height();
+
+    $(window).scroll(function(){
+        var nowHeight = $(this).scrollTop();
+        if(nowHeight < winHeight/2){
+            $(".dot-1").text("⚫")
+            $(".dot-2").text("⚪")
+            $(".dot-3").text("⚪")
+            $(".dot-4").text("⚪")
+        } else if (nowHeight > winHeight/2 && nowHeight < (winHeight * 3)/2){
+            $(".dot-1").text("⚪")
+            $(".dot-2").text("⚫")
+            $(".dot-3").text("⚪")
+            $(".dot-4").text("⚪")
+        } else if (nowHeight > (winHeight * 3)/2 && nowHeight < (winHeight * 5)/2){
+            $(".dot-1").text("⚪")
+            $(".dot-2").text("⚪")
+            $(".dot-3").text("⚫")
+            $(".dot-4").text("⚪")
+        } else {
+            $(".dot-1").text("⚪")
+            $(".dot-2").text("⚪")
+            $(".dot-3").text("⚪")
+            $(".dot-4").text("⚫")
+        }
+    })
+
+    $(".dot-1").click(function(){
+        $('html, body').animate({
+            scrollTop: $(".section1").offset().top
+        }, 1000);
+    })
+    $(".dot-2").click(function(){
+        $('html, body').animate({
+            scrollTop: $(".section2").offset().top
+        }, 1000);
+    })
+    $(".dot-3").click(function(){
+        $('html, body').animate({
+            scrollTop: $(".section3").offset().top
+        }, 1000);
+    })
+    $(".dot-4").click(function(){
+        $('html, body').animate({
+            scrollTop: $(".section4").offset().top
+        }, 1000);
+    })
+
+    $(document).ready(function(){
+        $(".hidemeY").each(function(i){
+            var controller = new ScrollMagic.Controller();
+            var ourScene = new ScrollMagic.Scene({
+                triggerElement: $(".hidemeY").get(i),
+                reverse: true,
+                triggerHook: 0.9
+            }).setClassToggle($(".hidemeY").get(i), "show").addTo(controller)
+        })
+        $(".hidemeX").each(function(i){
+            var controller = new ScrollMagic.Controller();
+            var ourScene = new ScrollMagic.Scene({
+                triggerElement: $(".hidemeX").get(i),
+                reverse: true,
+                triggerHook: 0.9
+            }).setClassToggle($(".hidemeX").get(i), "show").addTo(controller)
+        })
+
+        document.addEventListener("mousemove", parallax);
+        const elem = document.querySelector(".section1");
+        // Magic happens here
+        function parallax(e) {
+            let _w = window.innerWidth/2;
+            let _h = window.innerHeight/2;
+            let _mouseX = e.clientX;
+            let _mouseY = e.clientY;
+            let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+            let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+            let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+            let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+            console.log(x);
+            elem.style.backgroundPosition = x;
+        }
+    })
+    
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+crossorigin="anonymous"></script>
